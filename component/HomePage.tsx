@@ -3,12 +3,13 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Container from "./container";
 import Image from "next/image";
-import strock from "@/public/strock.png";
-import searchBox from "@/public/search.png";
-import billCard from "@/public/billcard.png";
-import aedc from "@/public/aedc.png";
-import bedc from "@/public/bedc.png";
-import ekedc from "@/public/ekedc.png";
+import strock from "@/public/image/strock.png";
+import searchBox from "@/public/image/search.png";
+import billCard from "@/public/image/billcard.png";
+import aedc from "@/public/image/aedc.png";
+import bedc from "@/public/image/bedc.png";
+import ekedc from "@/public/image/ekedc.png";
+import image1 from "@/public/image/24-Group 2488.png";
 function HomPage() {
   return (
     <div>
@@ -51,21 +52,82 @@ function HomPage() {
           />
         </div>
 
-        <div className="mt-[250px]">
+        <div className="mt-[250px] mb-[61px]">
           <div className="w-[70px] h-2 bg-lazy_Gold rounded-lg"></div>
-          <div className="flex gap-[63px]">
-            <div className="w-[300px]">
-              <h1 className="text-[39px] font-[600] ">Our service partners </h1>
+          <div className="flex  gap-[75px]">
+            <div className=" w-[300px]">
+              <h1 className="text-[39px] font-[500] ">
+                Our service <br></br> partners{" "}
+              </h1>
             </div>
-            <div className=" flex  justify-between ">
-              <Image className="w-[150] " src={aedc} alt="" />
-              <Image className="w-[150] " src={bedc} alt="" />
-              <Image className="w-[150] " src={ekedc} alt="" />
+            <div className=" flex justify-between w-full  ">
+              <Image className="w-[200px] h-[100px] " src={aedc} alt="" />
+              <Image className="w-[250px] h-[100px] " src={bedc} alt="" />
+              <Image className="w-[200px] h-[100px] " src={ekedc} alt="" />
             </div>
           </div>
         </div>
       </Container>
-
+      <section className="bg-green-banner bg-cover h-[600px] flex items-center pt-[50px]">
+        <Container>
+          <div className="flex     items-center">
+            <div className="w-[55%]  py-auto ">
+              <Image src={image1} alt="" />
+            </div>
+            <div className="text-white  w-[45%]  items-cente">
+              <h3 className="text-[45px] font-[700]">27/4 customer support</h3>
+              <p className="text-[20px] font-[400] my-[25px]">
+                Don't blame yourself; we're here to swiftly resolve your issues,
+                24/7, wherever you are. Your convenience is our priority.
+              </p>
+              <button className="bg bg-lazy_Gold text-[16px] px-[28px] py-[12px] rounded-md">
+                {" "}
+                Contact us{" "}
+              </button>
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className=" bg-white ">
+        <Container>
+          <div className="flex     items-center">
+            <div className="text-black  w-[45%]  items-cente">
+              <h3 className="text-[45px] font-[700]">Set topup remindert</h3>
+              <p className="text-[20px] font-[400] my-[25px]">
+                Tell us when to remind you to topup your electricity while you
+                focus on other issue at hand
+              </p>
+              <button className="text-white bg-lazy_Gold text-[16px] px-[28px] py-[12px] rounded-md">
+                {" "}
+                Reminder{" "}
+              </button>
+            </div>
+            <div className="w-[55%]  py-auto ">
+              <Image src={image1} alt="" />
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className=" bg-[#D9F2EF] ">
+        <Container>
+          <div className="flex     items-center">
+            <div className="w-[55%]  py-auto ">
+              <Image src={image1} alt="" />
+            </div>
+            <div className="text-white  w-[45%]  items-cente">
+              <h3 className="text-[45px] font-[700]">Pay via bank transfer</h3>
+              <p className="text-[20px] font-[400] my-[25px]">
+                Switch to bank transfers for instant, hassle-free electricity
+                top-ups. Stay focused while we keep your power flowing smoothly
+              </p>
+              <button className="bg bg-lazy_Gold text-[16px] px-[28px] py-[12px] rounded-md">
+                {" "}
+                Buy electricity{" "}
+              </button>
+            </div>
+          </div>
+        </Container>
+      </section>
       <Footer />
     </div>
   );

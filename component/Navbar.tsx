@@ -1,8 +1,8 @@
 import React from "react";
 import "@/app/globals.css";
 import Image from "next/image";
-import logo from "@/public/logo.png";
-import phoneicon from "@/public/vuesax-outline-call.png";
+import logo from "@/public/image/logo.png";
+import phoneicon from "@/public/image/vuesax-outline-call.png";
 import Container from "./container";
 export default function Navbar() {
   return (
