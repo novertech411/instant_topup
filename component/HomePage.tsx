@@ -10,6 +10,11 @@ import aedc from "@/public/image/aedc.png";
 import bedc from "@/public/image/bedc.png";
 import ekedc from "@/public/image/ekedc.png";
 import image1 from "@/public/image/24-Group 2488.png";
+import phone1 from "@/public/image/bill hand .png";
+import phone2 from "@/public/image/phone tick.png";
+import phone from "@/public/image/phone.png";
+import apple from "@/public/image/applestore.png";
+import google from "@/public/image/googleplay.png";
 function HomPage() {
   return (
     <div>
@@ -68,7 +73,7 @@ function HomPage() {
           </div>
         </div>
       </Container>
-      <section className="bg-green-banner bg-cover h-[600px] flex items-center pt-[50px]">
+      <section className="bg-green-banner bg-cover flex items-center py-[70px] ">
         <Container>
           <div className="flex     items-center">
             <div className="w-[55%]  py-auto ">
@@ -88,10 +93,10 @@ function HomPage() {
           </div>
         </Container>
       </section>
-      <section className=" bg-white ">
+      <section className=" bg-white  pt-[30px]">
         <Container>
           <div className="flex     items-center">
-            <div className="text-black  w-[45%]  items-cente">
+            <div className="text-black  w-[50%]  items-cente">
               <h3 className="text-[45px] font-[700]">Set topup remindert</h3>
               <p className="text-[20px] font-[400] my-[25px]">
                 Tell us when to remind you to topup your electricity while you
@@ -102,25 +107,26 @@ function HomPage() {
                 Reminder{" "}
               </button>
             </div>
-            <div className="w-[55%]  py-auto ">
-              <Image src={image1} alt="" />
+            <div className="w-[50%]  bre-[20px] justify-items-end ">
+              <Image src={phone1} alt="" />
             </div>
           </div>
         </Container>
       </section>
+
       <section className=" bg-[#D9F2EF] ">
         <Container>
-          <div className="flex     items-center">
+          <div className="flex     items-center gap-[170px] py-[100px]">
             <div className="w-[55%]  py-auto ">
-              <Image src={image1} alt="" />
+              <Image src={phone} alt="" />
             </div>
-            <div className="text-white  w-[45%]  items-cente">
+            <div className="text-black  w-[45%]  items-cente">
               <h3 className="text-[45px] font-[700]">Pay via bank transfer</h3>
               <p className="text-[20px] font-[400] my-[25px]">
                 Switch to bank transfers for instant, hassle-free electricity
                 top-ups. Stay focused while we keep your power flowing smoothly
               </p>
-              <button className="bg bg-lazy_Gold text-[16px] px-[28px] py-[12px] rounded-md">
+              <button className="text-white bg-lazy_Gold text-[16px] px-[28px] py-[12px] rounded-md">
                 {" "}
                 Buy electricity{" "}
               </button>
@@ -128,6 +134,20 @@ function HomPage() {
           </div>
         </Container>
       </section>
+
+      <Container>
+        <div className="bg-green-banner bg-cover h-[478px] relative  rounded-md text-center justify-center pt-[118px] my-[120px]">
+          <h2 className="text-white text-[49px] font-[700] ">
+            Download our app
+          </h2>
+          <div className="flex gap-[32px]   justify-center mt-[32px]  ">
+            <Image src={apple} alt="" className="" />
+            <Image src={google} alt="" className="" />
+          </div>
+          <Image src={phone2} alt="" className="  absolute bottom-0 right-10" />
+        </div>
+      </Container>
+
       <Footer />
     </div>
   );

@@ -14,6 +14,7 @@ const config: Config = {
 
       backgroundImage: {
         'green-banner': "url('/image/bg-green.svg')",
+        'login-bg': "url('/image/login_bg.png",
       },
 
       colors: {
